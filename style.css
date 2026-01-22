@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    /* Top Navigation */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px 200px 16px 200px;
+box-sizing: border-box;
+border-bottom: 1px solid rgba(65, 37, 103, 1);
+background: rgba(26, 11, 46, 1);
+
+}
+.nav-manu{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.nav-manu li{
+color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Medium;
+font-size: 16px;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: capitalize;
+text-decoration: none;
+}
+.nav-manu {
+
+  list-style-type: none;
+}
+.nav-manu li a{
+    text-decoration: none;
+}
+.logo{
+    /* TechWave */
+padding-top: 20px;
+border: 1px solid rgba(0, 0, 0, 1);
+}
+.subscribe-btn{
+  /* gradient background like your screenshot */
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  border: none;
+  border-radius: 9999px;
+  padding: 18px 34px;          /* size of the pill */
+  cursor: pointer;
+
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;            /* Semi Bold */
+  font-size: 32px;             /* looks like the image */
+  line-height: 1;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  
+
+  /* nice smooth feel */
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.subscribe-btn .arrow{
+  font-size: 34px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.subscribe-btn:hover{
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.subscribe-btn:active{
+  transform: translateY(0px) scale(0.99);
+}
+
+.subscribe-btn:focus-visible{
+  outline: 3px solid rgba(255,255,255,0.55);
+  outline-offset: 4px;
+}
+.hero{
+    /* Image */
+
+background-image: url(./assets/hero-bg.png);
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* centers the component in the page */
+.center-wrap{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+}
+
+/* container */
+.mic-badge{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  transform: translateY(60px);
+
+}
+
+/* circle */
+.mic-circle{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 8px solid rgba(42, 24, 108, 1);
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  display: grid;
+  place-items: center;
+
+  animation: floaty 3.2s ease-in-out infinite;
+  overflow: hidden;
+}
+
+/* mic inside center */
+.mic-icon{
+  width: 44%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.25));
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+/* NEW badge on RIGHT side */
+.new-badge{
+  position: absolute;
+  right: -10px;     /* pushes outside on the right */
+  top: 18px;
+
+  padding: 10px 16px;
+  border-radius: 9999px;
+  background: #2BFFB8;
+  color: #001b12;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.22);
+  border: 2px solid rgba(255,255,255,0.35);
+  z-index: 5;
+
+  animation: badgePop 1.8s ease-in-out infinite;
+}
+
+/* animations */
+@keyframes floaty{
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-10px); }
+}
+@keyframes pulse{
+  0%,100% { transform: scale(1); }
+  50%     { transform: scale(1.04); }
+}
+@keyframes badgePop{
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-3px); }
+}
+.techwave{
+    /* Frame 2087326324 */
+width: 550px;
+height: 100px;
+/* Auto layout */
+
+align-items: center;
+gap: 8;
+
+color: white;
+margin-bottom: 150px;
+
+}
+.techwave h2{
+color: rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Extra Bold;
+font-size: 60px;
+font-weight: 800;
+line-height: 73px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+.techwave p{
+    color: rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 10px;
+}
+.btn-row{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.btn-primary{
+    /* Primary Button_2 */
+width: 201px;
+height: 44px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8;
+padding: 12px 20px 12px 20px;
+border-radius: 10000px;
+background: linear-gradient(
+  47.64deg,
+  rgba(247, 233, 63, 1),
+  rgba(251, 9, 180, 1),
+  rgba(145, 0, 248, 1)
+);
+
+
+}
+.btn-outline{
+    /* Primary Button_2 */
+width: 147px;
+height: 44px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8;
+padding: 12px 20px 12px 20px;
+box-sizing: border-box;
+border: 1px solid rgba(0, 255, 136, 1); /* or #00FF88 */
+border-radius: 10000px;
+
+
+}
+.btn-icon{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex: 0 0 18px;
+}
+.about{
+    /* Apps */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 80;
+padding: 50px 200px 120px 200px;
+background: rgba(26, 11, 46, 1);
+
+}
+.about-container h2{
+    color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+.about-container p{
+    color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+}
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 80px;
+}
+.info-rating h3{
+color:  rgba(0, 255, 136, 1);
+
+font-family: Inter;
+font-style: Black;
+font-size: 48px;
+font-weight: 900;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+.info-rating p{
+    color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+}
