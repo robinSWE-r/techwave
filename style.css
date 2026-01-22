@@ -334,4 +334,130 @@ line-height: 20px;
 letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
+<<<<<<< HEAD
+=======
+}
+
+.why{
+    /* Apps */
+width: 1600px;
+height: 1121px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 40;
+padding: 120px 200px 120px 200px;
+background: rgba(35, 14, 61, 1);
+
+}
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  
+}
+
+.title{
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 0 40px;
+  color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+
+/* GRID LAYOUT (matches your screenshot structure) */
+.grid{
+  display: grid;
+  grid-template-columns: 1.05fr 1.5fr 1.5fr;
+  gap: 22px;
+  align-items: stretch;
+
+}
+
+/* card base */
+.card{
+  background: rgba(63, 29, 110, 0.45);
+  border-radius: 26px;
+  padding: 26px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+}
+
+.card h3{
+  margin: 12px 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card p{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.65);
+}
+
+.icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  background: linear-gradient(47.64deg,#f7e93f,#fb09b4,#9100f8);
+  box-shadow: 0 10px 25px rgba(251,9,180,0.25);
+}
+
+/* placement like the design */
+.premium{ grid-column: 1; grid-row: 1 / span 2; }
+.mobile{  grid-column: 2 / 4; grid-row: 1; }
+.global{  grid-column: 2 / 4; grid-row: 2; }
+.interviews{ grid-column: 1 / 3; grid-row: 3; }
+.resources{  grid-column: 3; grid-row: 3; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .premium{ grid-column: 1 / 3; grid-row: auto; }
+  .mobile{ grid-column: 1 / 3; }
+  .global{ grid-column: 1 / 3; }
+  .interviews{ grid-column: 1 / 3; }
+  .resources{ grid-column: 1 / 3; }
+}
+.design{
+    color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Bold;
+font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: capitalize;
+}
+.desingpara{
+    color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left; 
+>>>>>>> 5cdd735 (grid section added) 
 }
