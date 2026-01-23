@@ -513,3 +513,47 @@ line-height: 24px;
 letter-spacing: 0%;
 text-align: left;
 }
+.host{
+  background: rgba(26, 11, 46, 1);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.host-conainer{
+/* Frame 2087326328 */
+width: 1200px;
+height: 280px;
+/* Auto layout */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+padding: 40px;
+border-radius: 40px;
+background: rgba(53, 17, 101, 0.4);
+
+}
+.host-title h2{
+  color:  rgba(255, 255, 255, 1);
+ 
+
+font-family: Inter;
+font-style: Bold;
+font-size: 32px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: capitalize;
+}
+.host-title p{
+  color: rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
