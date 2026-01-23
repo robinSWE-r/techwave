@@ -633,14 +633,14 @@ text-align: left;
     color: rgba(255,255,255,0.95);
   }
 
-  /* Local icon images */
+  
   .tw-ico{
     width: 16px;
     height: 16px;
     object-fit: contain;
     display: block;
 
-    /* If your icons are dark/colored and you want them white like the screenshot: */
+    
     filter: brightness(0) invert(1);
     opacity: 0.9;
   }
@@ -671,3 +671,299 @@ text-align: left;
   }
   .wave-left{ left: -120px; }
   .wave-right{ right: -120px; transform: translateY(-50%) scaleX(-1); }
+  /* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* -------- Small devices (<= 576px) -------- */
+@media (max-width: 576px) {
+
+  /* Global */
+  body { overflow-x: hidden; }
+  img { max-width: 100%; height: auto; }
+
+  /* NAV */
+  .nav{
+    padding: 14px 16px;
+  }
+
+  /* If you have hamburger icon, give it a class like .hamburger */
+  .nav-manu{ 
+    display: none;            /* hide menu list on mobile */
+  }
+  /* OPTIONAL: if you add a hamburger element */
+  /* .hamburger{ display:block; color:#fff; font-size:24px; } */
+
+  .logo{
+    padding-top: 0;
+    border: none;
+  }
+
+  /* HERO / TOP SECTION */
+  .hero{
+    background-position: center;
+    background-size: cover;
+  }
+
+  .center-wrap{
+    min-height: auto;
+    padding: 28px 16px 40px;
+  }
+
+  .mic-badge{
+    width: 190px;
+    height: 190px;
+    transform: translateY(20px);
+  }
+
+  .new-badge{
+    right: -6px;
+    top: 12px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .techwave{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  .techwave h2{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .techwave p{
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .btn-row{
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn-primary,
+  .btn-outline{
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+  }
+
+  /* ABOUT */
+  .about{
+    padding: 60px 16px 70px;
+    gap: 40px;
+  }
+  .about-container h2{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about-container p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .ratings{
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 28px;
+    align-items: center;
+  }
+
+  /* WHY SECTION */
+  .why{
+    width: 100%;
+    height: auto;
+    padding: 60px 16px;
+    gap: 24px;
+  }
+
+  .container{
+    padding: 50px 16px;
+  }
+  .title{
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;  /* 1 column on mobile */
+    gap: 16px;
+  }
+  .premium,.mobile,.global,.interviews,.resources{
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /* FEATURED / CARDS */
+  .featured{
+    padding: 60px 16px;
+    gap: 50px;
+  }
+  .cards{
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .video{
+    width: 100%;
+    max-width: 380px;
+  }
+
+  /* HOST */
+  .host{
+    padding: 0 16px 60px;
+  }
+  .host-conainer{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    border-radius: 28px;
+  }
+  .host-title h2{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .host-title p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* FOOTER */
+  .tw-footer{
+    width: 100%;
+    height: auto;
+    padding: 22px 16px;
+  }
+  .tw-logo{
+    font-size: 40px;
+  }
+  .tw-links{
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .wave{ display:none; } /* hide wave svgs on small */
+}
+
+
+/* -------- Medium devices (576px to 992px) -------- */
+@media (min-width: 577px) and (max-width: 992px) {
+
+  .nav{ padding: 16px 40px; }
+
+  .about{ padding: 70px 40px 90px; }
+  .why{ width: 100%; height: auto; padding: 80px 40px; }
+  .featured{ padding: 80px 40px; }
+
+  .techwave{
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 70px;
+  }
+  .techwave h2{ font-size: 52px; line-height: 62px; }
+
+  .ratings{ gap: 40px; }
+
+  .grid{
+    grid-template-columns: 1fr 1fr; /* 2 columns on tablet */
+  }
+  .premium{ grid-column: 1 / 3; }
+  .mobile{ grid-column: 1 / 3; }
+  .global{ grid-column: 1 / 3; }
+  .interviews{ grid-column: 1 / 3; }
+  .resources{ grid-column: 1 / 3; }
+
+  .host-conainer{
+    width: 100%;
+    height: auto;
+  }
+
+  .tw-footer{
+    width: 100%;
+  }
+}
+/* Hamburger default hidden (desktop) */
+.hamburger{
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger-icon{
+  width: 26px;
+  height: 26px;
+  display: block;
+  object-fit: contain;
+
+  /* if your hamburger icon is dark, make it white */
+  filter: brightness(0) invert(1);
+}
+
+/* MOBILE */
+@media (max-width: 576px){
+
+  .nav{
+    padding: 14px 16px;
+    position: relative; /* dropdown anchor */
+  }
+
+  /* show hamburger on mobile */
+  .hamburger{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Hide menu on mobile by default */
+  .manu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-manu{
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+
+    padding: 16px;
+    background: rgba(26, 11, 46, 0.98);
+    border-bottom: 1px solid rgba(65, 37, 103, 1);
+    z-index: 999;
+  }
+
+  /* When menu opens */
+  .nav-manu.open{
+    display: flex;
+  }
+
+  .nav-manu li a{
+    display: block;
+    padding: 10px 6px;
+    color: white;
+  }
+
+  /* Optional: hide subscribe button on mobile (your screenshot shows only hamburger) */
+  .button{
+    display: none;
+  }
+}
+.manu a{
+  color:  rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Medium;
+font-size: 16px;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: capitalize;
+}

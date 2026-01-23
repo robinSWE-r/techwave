@@ -17,23 +17,31 @@
 
 <body>
   <nav class="nav">
-    <div class="logo">
-      <img src="./assets/image.png" alt="">
-    </div>
-    <div class="manu">
-      <ul class="nav-manu">
-        <li><a href=""></a>About</a></li>
-        <li><a href=""></a>Episode</li>
-        <li><a href=""></a>Host</li>
-      </ul>
-    </div>
-    <div class="button">
-      <button class="subscribe-btn">
-        <span>Subscribe</span>
-        <span class="arrow">→</span>
-      </button>
-    </div>
-  </nav>
+  <div class="logo">
+    <img src="./assets/image.png" alt="TechWave Logo">
+  </div>
+
+  <div class="manu">
+    <ul class="nav-manu" id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#episode">Episode</a></li>
+      <li><a href="#host">Host</a></li>
+    </ul>
+  </div>
+
+  <div class="button">
+    <button class="subscribe-btn">
+      <span>Subscribe</span>
+      <span class="arrow">→</span>
+    </button>
+  </div>
+
+ 
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <img src="./assets/hamburger-menu.png" alt="" class="hamburger-icon">
+  </button>
+</nav>
+
   <section class="hero">
     <div class="center-wrap">
       <div class="mic-badge">
