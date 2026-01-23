@@ -517,7 +517,7 @@ text-align: left;
   background: rgba(26, 11, 46, 1);
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+ 
 }
 .host-conainer{
 /* Frame 2087326328 */
@@ -557,3 +557,117 @@ line-height: 24px;
 letter-spacing: 0%;
 text-align: left;
 }
+
+
+  .tw-footer{
+    background-image: url(./assets/footer-bg.png);
+
+    height: 172px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #fff;
+
+    background: radial-gradient(120% 140% at 50% 0%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0) 55%),
+                linear-gradient(90deg, #180A33 0%, #22104A 50%, #180A33 100%);
+    border: 1px solid #2a2f7a;
+    box-shadow: inset 0 3px 0 #2a2f7a;
+  }
+
+  .tw-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  /* Logo */
+  .tw-logo{
+    margin: 0;
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+  .tw-logo .tech{ color: #ffffff; }
+  .tw-logo .waveText{
+    background: linear-gradient(90deg, #ff2bd6 0%, #b14cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Links row */
+  .tw-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+  }
+  .tw-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;        /* Medium */
+    line-height: 19px;
+    letter-spacing: 0;
+    color: rgba(255,255,255,0.75);
+  }
+  .tw-link:hover{
+    color: rgba(255,255,255,0.95);
+  }
+
+  /* Local icon images */
+  .tw-ico{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    display: block;
+
+    /* If your icons are dark/colored and you want them white like the screenshot: */
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+  }
+
+  /* Copyright */
+  .tw-copy{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgba(255,255,255,0.55);
+  }
+
+  /* Background waves */
+  .wave{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 520px;
+    height: 120px;
+    opacity: 0.22;
+    z-index: 1;
+  }
+  .wave path{
+    fill: none;
+    stroke: rgba(255,255,255,0.55);
+    stroke-width: 2;
+  }
+  .wave-left{ left: -120px; }
+  .wave-right{ right: -120px; transform: translateY(-50%) scaleX(-1); }
